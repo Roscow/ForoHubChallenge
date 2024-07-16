@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-category {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.new-category:hover {
+    background-color: #0056b3;
+}
+
+/*PARA DETAIL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.edit-category, .delete-category {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-category {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.edit-category:hover {
+    background-color: #218838;
+}
+
+.delete-category {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.delete-category:hover {
+    background-color: #c82333;
+}
+
+/* ACTUALIZAR CATEGORIA */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}

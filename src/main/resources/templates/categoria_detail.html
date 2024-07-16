@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Category Details</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Category Details</h1>
+<div>
+    <h2 th:text="${categoria.nombre}">Category Name</h2>
+    <a th:href="@{/category/edit/{id}(id=${categoria.id})}" class="edit-category">Edit Category</a>
+    <form th:action="@{/category/{id}(id=${categoria.id})}" method="post" style="display:inline;">
+        <input type="hidden" name="_method" value="delete"/>
+        <button type="submit" class="delete-category">Delete Category</button>
+    </form>
+</div>
+<a th:href="@{/category}">Back to Categories</a>
+</body>
+</html>

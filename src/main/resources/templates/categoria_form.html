@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${categoria.id == null ? 'New Category' : 'Edit Category'}"></title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1 th:text="${categoria.id == null ? 'New Category' : 'Edit Category'}"></h1>
+<form th:action="@{/categorias}" th:object="${categoria}" method="post">
+    <label for="nombre">Name:</label>
+    <input type="text" id="nombre" name="nombre" th:field="*{nombre}" required/>
+    <button type="submit" th:text="${categoria.id == null ? 'Create' : 'Save'}"></button>
+</form>
+<a th:href="@{/category}">Back to Categories</a>
+</body>
+</html>

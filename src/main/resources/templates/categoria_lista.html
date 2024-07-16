@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Categorías</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Categorías</h1>
+<a class="new-category" th:href="@{/category/new}">Nueva Categoría</a>
+<ul>
+    <li th:each="categoria : ${categorias}">
+        <a th:href="@{/category/{id}(id=${categoria.id})}" th:text="${categoria.nombre}">Nombre de la Categoría</a>
+    </li>
+</ul>
+</body>
+</html>
